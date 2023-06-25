@@ -4,25 +4,33 @@
 
 Google font
 
-``` html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
-  rel="stylesheet">
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 Ionicon
 
-``` html
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+```html
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
 ```
 
 ---
 
 ## Background Colors
 
-``` css
+```css
 --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
 --bg-carolina-blue: hsla(199, 89%, 49%, 1);
 --bg-prussian-blue: hsla(216, 33%, 20%, 1);
@@ -32,7 +40,7 @@ Ionicon
 
 ## Text color
 
-``` css
+```css
 --text-white: hsla(0, 0%, 100%, 1);
 --text-alice-blue: hsla(216, 100%, 95%, 1);
 --text-columbia-blue: hsla(199, 69%, 84%, 1);
@@ -44,7 +52,7 @@ Ionicon
 
 ## Gradient color
 
-``` css
+```css
 --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
 --gradient-2: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
 --gradient-3: linear-gradient(0deg, #000d1a, transparent);
@@ -52,7 +60,7 @@ Ionicon
 
 ## Border color
 
-``` css
+```css
 --border-wild-blue-yonder: hsla(216, 33%, 68%, 1);
 --border-prussian-blue: hsla(216, 33%, 20%, 1);
 --border-white: hsl(0, 0%, 100%);
@@ -61,22 +69,22 @@ Ionicon
 
 ## Default color
 
-``` css
+```css
 --white: hsl(0, 0%, 100%, 1);
 --black: hsl(0, 0%, 0%, 1);
 ```
 
 ## Font Family
 
-``` css
---fontFamily-noto_sans: 'Noto Sans', sans-serif;
+```css
+--fontFamily-noto_sans: "Noto Sans", sans-serif;
 ```
 
 ## Font Size
 
-``` css
+```css
 --fontSize-1: 2.9rem;
---fontSize-2: 2.0rem;
+--fontSize-2: 2rem;
 --fontSize-3: 1.8rem;
 --fontSize-4: 1.6rem;
 --fontSize-5: 1.5rem;
@@ -87,7 +95,7 @@ Ionicon
 
 ## Font Weight
 
-``` css
+```css
 --weight-medium: 500;
 --weight-semiBold: 600;
 --weight-bold: 700;
@@ -96,7 +104,7 @@ Ionicon
 
 ## Line Height
 
-``` css
+```css
 --lineHeight-1: 1.3;
 --lineHeight-2: 1.5;
 --lineHeight-4: 1.5;
@@ -104,14 +112,14 @@ Ionicon
 
 ## Box Shadow
 
-``` css
+```css
 --shadow-1: 0 8px 20px 0 hsla(0, 0%, 0%, 0.05);
 --shadow-2: 0px 3px 20px hsla(180, 90%, 43%, 0.2);
 ```
 
 ## Border Radius
 
-``` css
+```css
 --radius-6: 6px;
 --radius-8: 8px;
 --radius-16: 16px;
@@ -122,13 +130,13 @@ Ionicon
 
 ## Spacing
 
-``` css
+```css
 --section-padding: 70px;
 ```
 
 ## Transition
 
-``` css
+```css
 --transition-1: 0.25s ease;
 --transition-2: 0.5s ease;
 --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
