@@ -13,16 +13,21 @@ const addEventOnElements = function (elements, eventType, callback) {
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 
-const toggleNav = () => navbar.classicList.toggle("active");
-addEventOnElements(navTogglers, "click", toggleNav);
-
+const toggleNav = () => {
+  navbar.classicList.toggle("active");
+  addEventOnElements(navTogglers, "click", toggleNav);
+  document.body.classList.toggle("nav-active");
+};
 /** HEADER ANIMATION */
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 100) {
     header.classList.add("active");
+    backTopBtn.classList.add("active");
   } else {
     header.classList.remove("active");
+    backTopBtn.classList.remove("active");
   }
 });
 /**slider */
@@ -32,9 +37,9 @@ const sliderPrevBtn = document.querySelector("[data-slider-prev]");
 const sliderNextBtn = document.querySelector("[data-slider-next]");
 
 let totalSliderVisibleItems = Number(
-  getComputedStyle(slider).getPropertyValue("--slider-items")
+  getComputedStyle(slider).getPropertyValue(" --slider-items")
 );
-let totalSlidableVisibleItems =
+let totalSlidableItems =
   sliderContainer.childElementCount - totalSliderVisibleItems;
 let currentSlidePos = 0;
 const moveSliderItem = function () {
@@ -43,9 +48,7 @@ const moveSliderItem = function () {
 };
 /**Next Slide */
 const slideNext = function () {
-  const slideEnd = (currentSlidePos) => {
-    return totalSliderVisibleItems;
-  };
+  const slideEnd = (currentSlidePos) => totalSlidableItems;
   if (slideEnd) {
     currentSlidePos = 0;
   } else {
@@ -71,7 +74,6 @@ window.addEventListener("resize", function () {
   totalSliderVisibleItems = Number(
     this.getComputedStyle(slider).getPropertyValue("--slider-items")
   );
-  totalSlidableItems =
-    sliderContainer.childElementCount - totalSlidableVisibleItems;
+  totalSlidableItems = sliderContainer.childElementCount - totalSlidableItems;
   moveSliderItem();
 });
