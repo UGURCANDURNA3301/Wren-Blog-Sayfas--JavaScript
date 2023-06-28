@@ -114,9 +114,8 @@
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
-}
+li {list-style: none;}
+
 a,
 img,
 span,
@@ -235,7 +234,7 @@ body.nav-active {
 .section-title {
   margin-block-end: 10px;
 }
-.headline.span {
+.headline .span {
   background-image: var(--gradient-1);
   display: inline-block;
   -webkit-text-fill-color: transparent;
